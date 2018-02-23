@@ -1,0 +1,916 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:sans-serif;
+	background:url(../img/Achtergrond.jpg) no-repeat center center fixed;
+
+  	background-size: 100%;
+}
+
+div.line{
+	width:65%;
+	border-bottom: 1px solid rgba(255,255,255,0.8);
+	display: block;
+	margin:auto;
+}
+
+h1{
+	font-family: 'Digitalt';
+	font-size: 67px;
+	color:white;
+	text-shadow: 2px 2px black;
+	text-align: center;
+	margin-top:50px;
+}
+
+/*-------------------------------------START SCREEN-------------------------------------*/
+section#startScreen{
+	text-align: center;
+}
+
+section#startScreen h1{
+	font-size:120px;
+	text-shadow: 3px 3px 2px black;
+}
+section#startScreen .explanation{
+	color:white;
+	width:740px;
+	text-align: center;
+	border-radius: 20px;
+	box-shadow:3px 3px 8px black;
+	display:inline-block;
+	margin-top:70px;
+	padding:30px 0px;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffde00+0,ff8a00+100 */
+	background: rgb(255,222,0); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,222,0,1) 0%, rgba(255,138,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,222,0,1) 0%,rgba(255,138,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,222,0,1) 0%,rgba(255,138,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde00', endColorstr='#ff8a00',GradientType=0 ); /* IE6-9 */
+    
+}
+
+section#startScreen .explanation:nth-of-type(2){
+	margin-left:275px;
+}
+
+section#startScreen .explanation div.flag{
+	margin-bottom:20px;
+	text-align: center;
+}
+
+section#startScreen .explanation div.flag img{
+	box-shadow: 2px 2px 3px black;
+}
+
+section#startScreen .explanation h2, section#startScreen .explanation h3{
+	font-family: "Digitalt";
+	text-shadow:2px 2px 2px black;
+	font-size:48px;
+}
+
+section#startScreen .explanation:nth-of-type(2) h2{
+	font-size:48px;
+}
+
+section#startScreen .explanation h3{
+	margin-top:90px;
+	font-size:55px;
+}
+
+section#startScreen .explanation>p{
+	margin-top:40px;
+	font-family: "Geomanist-Medium";
+	text-shadow:2px 2px 1px black;
+	font-size:33px;
+	letter-spacing:1px;
+	line-height:40px;
+}
+
+section#startScreen .explanation .notice{
+	font-size: 28px;
+	font-family: "Geomanist-Medium";
+	color:black;
+	text-align: left;
+	background: rgba(255,255,255,0.5);
+	padding: 20px 0px;
+	width:740px;
+	margin-top:50px;
+	margin-bottom:20px;
+
+}
+
+section#startScreen .explanation .notice img{
+	display:inline-block;
+	width:8%;
+	margin-left:40px;
+}
+
+section#startScreen .explanation .notice p{
+	display: inline-block;
+	/*color:white;
+	text-shadow:2px 2px 2px black;*/
+	width:70%;
+	margin-left:20px;
+	vertical-align: top;
+	margin-top:5px;
+}
+
+section#startScreen .explanation .notice strong{
+	font-size: 30px;
+	font-family: "Geomanist-Bold";
+}
+
+section#startScreen .secondScreen{
+	position: absolute;
+	width:200px;
+	bottom:50px;
+	transform:translateX(-27px);
+
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+
+
+/*-------------------------------------QUESTION SCREEN-------------------------------------*/
+section#questionScreen{
+	display: none;
+}
+
+section#questionScreen div#questions .question-NL, section#questionScreen div#questions .question-EN{
+	background: rgba(0,0,0,0.7);
+	color:white;
+	font-size: 37px;
+	font-family: "Geomanist-Medium";
+	line-height: 45px;
+}
+
+section#questionScreen div#questions .question-NL{
+	padding:15px 15px 15px 70px;
+	max-width:1000px;
+	border-radius: 0px 20px 20px 0px;
+	margin-top:45px;
+
+}
+
+section#questionScreen div#questions .question-EN{
+	position: absolute;
+	right:0;
+	text-align: right;
+	padding:15px 70px 15px 15px;
+	max-width:1000px;
+	margin-top:20px;
+	border-radius: 20px 0px 0px 20px;
+}
+
+section#questionScreen div#answers{
+	margin-top:255px;
+	text-align: center;
+}
+
+section#questionScreen div#answers .answerBlock{
+	background: yellow;
+	width:560px;
+	height:200px;
+	display:inline-block;
+	border-radius: 20px;
+
+	box-shadow: 4px 4px 12px black;
+
+	/*-----GRADIENT-----*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffde00+0,ff8a00+100 */
+	background: rgb(255,222,0); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,222,0,1) 0%, rgba(255,138,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,222,0,1) 0%,rgba(255,138,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,222,0,1) 0%,rgba(255,138,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde00', endColorstr='#ff8a00',GradientType=0 ); /* IE6-9 */
+}
+
+section#questionScreen div#answers .answerBlock:nth-of-type(1){
+	/*margin-left:70px;*/
+}
+
+section#questionScreen div#answers .answerBlock:not(:nth-of-type(3)){
+	margin-right:50px;
+}
+
+
+section#questionScreen div#answers .answerBlock .answerLetter{
+	font-family: 'Digitalt';
+	font-size: 91px;
+	color:white;
+	text-shadow:2px 2px 2px black;
+	padding-top:40px;
+	padding-left:20px;
+	position:absolute;
+}
+
+section#questionScreen div#answers .answerBlock .answer{
+	display:inline-block;
+	height:100%;
+	vertical-align: top;
+	width:100%;
+}
+
+section#questionScreen div#answers .answerBlock .answer .answer-NL, section#questionScreen div#answers .answerBlock .answer .answer-EN, section#questionScreen div#answers .answerBlock .answer .answer-Both{
+	font-family: "Geomanist-Bold"; /*moet bold zijn*/
+	font-size: 50px;
+	color:white;
+	text-shadow: 2px 2px 1px black;
+	text-align: center;
+}
+
+section#questionScreen div#answers .answerBlock .answer .answer-Both{
+	margin: auto;
+	margin-top: 75px;
+	width: 100%;
+	display:none;
+}
+
+section#questionScreen div#answers .answerBlock .answer .answer-NL{
+	margin-top:25px;
+	margin-bottom: 15px;
+}
+
+section#questionScreen div#answers .answerBlock .answer .answer-EN{
+	margin-top:20px;
+}
+
+
+section#questionScreen div#score{
+	background:rgba(0,0,0,0.7);
+	padding:20px 0px;
+	position: absolute;
+	bottom:0;
+	width: 100%;
+	text-align: center;
+}
+
+section#questionScreen div#score .scoreTeam1, div#score .scoreTeam2 {
+	display: inline-block;
+}
+
+section#questionScreen div#score .scoreTeam1{
+	margin-right:50px;
+}
+
+section#questionScreen div#score .teamName{
+	font-family: 'Digitalt';
+	font-size: 45px;
+	color:white;
+	text-shadow:1px 1px 1px black;
+	display:inline-block;
+	margin-right:15px;
+}
+
+section#questionScreen div#score .bar{
+	width:610px;
+	height:50px;
+	background: white;
+	border-radius: 25px;
+	overflow:hidden;
+	display:inline-block;
+	vertical-align: top;
+	box-shadow: inset 2px 1px 8px black;
+}
+
+section#questionScreen div#score .bar .progress{
+	width:610px;
+	height:50px;
+	border-radius: 25px;
+	
+}
+
+section#questionScreen div#score .scoreTeam1 .bar .progress{
+	width:0px;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f94e4e+0,8c070b+100 */
+	background: #f94e4e; /* Old browsers */
+    background: -moz-linear-gradient(top, #f94e4e 0%, #8c070b 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #f94e4e 0%,#8c070b 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #f94e4e 0%,#8c070b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f94e4e', endColorstr='#8c070b',GradientType=0 ); /* IE6-9 */
+}
+
+section#questionScreen div#score .scoreTeam2 .bar .progress{
+	width:0px;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1a65cb+0,1919c4+100 */
+	background: rgb(26,101,203); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(26,101,203,1) 0%, rgba(25,25,196,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(26,101,203,1) 0%,rgba(25,25,196,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(26,101,203,1) 0%,rgba(25,25,196,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1a65cb', endColorstr='#1919c4',GradientType=0 ); /* IE6-9 */
+}
+
+section#questionScreen canvas#my_canvas{
+    position: absolute;
+    z-index:1;
+    margin-left:29px;
+}
+
+section#questionScreen canvas#my_other_canvas{
+    position: absolute;
+    z-index: 0;
+    margin-left:29px;
+}
+
+section#questionScreen div#time{
+	width: 200px;
+	position: absolute;
+	top:0;
+	right:75px; 
+}
+
+
+section#questionScreen div#time div.timeLeft{
+	font-family: 'Digitalt';
+	color: white;
+	text-shadow:2px 2px 2px black;
+	font-size: 73px;
+	text-align: center;
+	width:inherit;
+	padding:35px 0px;
+	-ms-transform: rotate(3deg); /* IE 9 */
+    -webkit-transform: rotate(3deg); /* Chrome, Safari, Opera */
+    transform: rotate(3deg);
+    position: absolute;
+}
+
+section#questionScreen div#time .title{
+	font-family: 'Digitalt';
+	color: white;
+	text-shadow:2px 2px 2px black;
+	font-size: 41px;
+	margin-bottom: 15px;
+	margin-top:45px;
+
+}
+
+section#questionScreen div#percentages{
+	width:560px;
+	margin:auto;
+	margin-top:50px;
+}
+
+
+section#questionScreen div#percentages .rightAnswer{
+	text-align: center;
+}
+
+section#questionScreen div#percentages .rightAnswer .team1, section#questionScreen div#percentages .rightAnswer .team2{
+	display: inline-block;
+	color:white;
+}
+
+section#questionScreen div#percentages .rightAnswer .team1{
+	margin-right:100px;
+}
+
+section#questionScreen div#percentages .rightAnswer div .title{
+	font-family: 'Geomanist-Bold';
+	font-size: 60px;
+	text-shadow:2px 2px 4px black;
+	transform:rotate(-3deg);
+}
+
+section#questionScreen div#percentages .rightAnswer div .percentage{
+	font-family: 'Digitalt';
+	font-size:90px;
+	text-shadow:2px 2px 3px black;
+	transform:rotate(-3deg);
+}
+
+
+/*-------------------------------------RESULT SCREEN-------------------------------------*/
+
+section#resultScreen .points .scoreNumbers .title{
+	font-size: 50px;
+	color:white;
+	font-family: "Digitalt";
+	text-shadow:2px 2px 2px black;
+	margin-top:50px;
+	
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffde00+0,ff8a00+100 */
+	background: rgb(255,222,0); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,222,0,1) 0%, rgba(255,138,0,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,222,0,1) 0%,rgba(255,138,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,222,0,1) 0%,rgba(255,138,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffde00', endColorstr='#ff8a00',GradientType=0 ); /* IE6-9 */
+}
+
+section#resultScreen .points .scoreNumbers .title>div{
+	display:inline-block;
+	text-align: center;
+}
+
+section#resultScreen .points .scoreNumbers .title>div:nth-of-type(1){
+	margin-left:600px;
+}
+
+section#resultScreen .points .scoreNumbers .title>div:not(:nth-of-type(1)){
+	margin-left:130px;
+	vertical-align: top;
+	margin-top:30px;
+}
+
+section#resultScreen .points .scoreNumbers .teamScore{
+	font-family: "ProximaNova-Black";
+	font-size:50px;
+	color:white;
+	text-shadow:2px 2px 2px black;
+	background:rgba(0,0,0,0.5);
+}
+
+section#resultScreen .points .scoreNumbers .teamScore>div{
+	display: inline-block;
+	vertical-align: top;
+}
+
+section#resultScreen .points .scoreNumbers>div:nth-of-type(2){
+	background: rgba(255,255,255,0.5)
+}
+
+section#resultScreen .points .scoreNumbers .teamScore{
+	height: 50px;
+	padding:75px 0px;
+
+}
+
+section#resultScreen .points .scoreNumbers div:nth-of-type(2) .teamName{
+	font-size:100px;
+	font-family: "ProximaNova-Black";
+	margin-left:70px;
+	width:370px;
+	transform:translateY(-20px);
+}
+
+
+
+section#resultScreen .points .scoreNumbers div:nth-of-type(3) .teamName{
+	font-size:60px;
+	font-family: "ProximaNova-Black";
+	width:370px;
+	text-align: right;
+	margin-left:70px;
+}
+
+section#resultScreen .points .scoreNumbers .teamScore div:not(.teamName){
+	text-align: center;
+}
+
+section#resultScreen .points .scoreNumbers .teamScore .score{
+	width:300px;
+	margin-left:100px;
+}
+
+section#resultScreen .points .scoreNumbers .teamScore .percentageCorrect{
+	margin-left:85px;
+}
+
+section#resultScreen .points .scoreNumbers .teamScore .percentageIncorrect{
+	margin-left:220px;
+}
+
+section#resultScreen .points .scoreNumbers .teamScore .winner{
+	margin-left:210px;
+	transform:translateY(-35px);
+}
+
+section#resultScreen .points .scoreNumbers .teamScore .winner div:nth-of-type(1){
+	margin-bottom:10px;
+}
+
+section#resultScreen .points .scoreNumbers .teamScore .winner div:nth-of-type(3){
+	margin-top:15px;
+}
+
+section#resultScreen .thanks{
+	font-size:45px;
+	font-family: "Geomanist-Medium";
+	text-shadow:2px 2px 2px black;
+	color:white;
+	text-align: center;	
+
+	width:650px;
+	padding:20px;
+	position:absolute;
+	bottom:0;
+
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	margin-bottom:50px;
+}
+
+section#resultScreen .thanks .NL-text{
+	margin-bottom:10px;
+}
+
+section#resultScreen .thanks .EN-text{
+	margin-top:15px;
+}
+
+section#resultScreen .line{
+	width:100%;
+	border-bottom: 2px solid rgba(255,255,255,0.8);
+	box-shadow:1px 1px 1px black;
+}
+
+/*-------When it's a draw-------*/
+section#resultScreen.draw .points .scoreNumbers div:nth-of-type(2) .teamName{
+	font-size: 60px;
+	text-align: right;
+	transform:translateY(0);
+}
+
+section#resultScreen.draw .points .scoreNumbers .teamScore .winner{
+	display:none;
+}
+
+
+
+
+
+
+
+/*---------------Transitions---------------*/
+section#startScreen{
+	opacity: 0;
+	transition: opacity 1s ease;
+
+}
+
+section#startScreen.animateIn{
+	opacity: 1;
+}
+
+section#startScreen.hide{
+	display:none;
+}
+
+section#questionScreen{
+	opacity: 0;
+	transition:opacity 1s ease;
+}
+
+section#questionScreen.animateIn{
+	opacity: 1;
+}
+
+section#questionScreen.show{
+	display:block;
+}
+
+section#questionScreen div#answers .answerBlock .answer .answer-Both.show{
+	display:inherit;
+}
+
+section#questionScreen div#answers .answerBlock .answer .answer-NL.hide, section#questionScreen div#answers .answerBlock .answer .answer-EN.hide{
+	display:none;
+}
+
+
+
+section#questionScreen h1{
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+section#questionScreen h1.animateIn{
+	opacity: 1;
+}
+
+
+section#questionScreen div#questions .question-NL{
+	opacity: 0;
+	transform:translateY(30em);
+	transition: opacity 1s ease, transform 1s cubic-bezier(.38,1.27,.67,1.17);
+}
+
+section#questionScreen div#questions .question-NL.animateIn{
+	opacity: 1;
+	transform: translateY(0em);
+}
+
+
+section#questionScreen div#questions .question-EN{
+	opacity: 0;
+	transform:translateY(30em);
+	transition: opacity 1s ease, transform 1s cubic-bezier(.38,1.27,.67,1.17);
+}
+
+section#questionScreen div#questions .question-EN.animateIn{
+	opacity: 1;
+	transform: translateY(0em);
+}
+
+
+section#questionScreen div#answers .answerBlock{
+	opacity: 0;
+	transition: opacity 0.5s ease;
+}
+
+section#questionScreen div#answers .answerBlock.animateIn{
+	opacity: 1;
+}
+
+section#questionScreen div#score .bar .progress{
+	transition: width 0.7s ease;
+}
+
+section#questionScreen div#time{
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+
+section#questionScreen div#time.animateIn{
+	opacity: 1;
+}
+
+section#questionScreen div#questionImage{
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+section#questionScreen div#questionImage.animateIn{
+	opacity: 1;
+}
+
+
+section#questionScreen div#percentages .rightAnswer .team1, section#questionScreen div#percentages .rightAnswer .team2{
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+section#questionScreen div#percentages .rightanswer .team1.animateIn, section#questionScreen div#percentages .rightanswer .team2.animateIn{
+	opacity: 1;
+}
+
+section#questionScreen div#score{
+	opacity: 1;
+	transition: opacity 0.4s ease;
+}
+
+section#questionScreen div#score.animateOut{
+	opacity: 0;
+}
+
+
+
+/*----------Question With Image----------*/
+
+section#questionScreen div#questionImage{
+	height:525px;
+	width:44%;
+	margin-top:75px;
+	vertical-align: top;
+	display: none;
+}
+
+section#questionScreen div#questionImage.show{
+	display:inline-block;
+}
+
+section#questionScreen div#answers.image{
+	display:inline-block;
+	width:55.769041061401363634%;
+	/*width:56%;*/
+	vertical-align: top;
+	margin-top:180px;
+	text-align: left;
+}
+
+section#questionScreen div#questionImage div.image{
+	background:white;
+	width:695px;
+	height:525px;
+	box-shadow: 3px 3px 10px black;
+	margin:auto;
+	background: blue;
+	overflow:hidden;
+	border:10px solid white;
+
+	background-image: url('../img/quiz.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: center;
+}
+
+section#questionScreen div#answers.image .answerBlock{
+	margin:0;
+	width:485px;
+}
+
+section#questionScreen div#answers.image .answerBlock:nth-of-type(n+1){
+	margin-right:40px;
+	margin-bottom:30px;
+}
+
+section#questionScreen div#percentages.image{
+	transform:translate(400px,-210px);
+}
+
+
+/*----------Right Answer----------*/
+
+section#questionScreen div#answers .answerBlock.rightAnswer{
+	transform: translateX(0);
+	transition: transform 1s ease;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#14ff35+0,04a10f+100 */
+	background: #14ff35; /* Old browsers */
+    background: -moz-linear-gradient(top, #14ff35 0%, #04a10f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #14ff35 0%,#04a10f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #14ff35 0%,#04a10f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14ff35', endColorstr='#04a10f',GradientType=0 ); /* IE6-9 */
+}
+
+section#questionScreen div#answers .answerBlock.notRightAnswer{
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+
+
+/*----------Move right answer------------*/
+
+
+section#questionScreen div#answers .answerBlock:nth-of-type(1).rightAnswer{
+
+	transform: translateX(610px);
+}
+
+
+section#questionScreen div#answers .answerBlock:nth-of-type(2).rightAnswer{
+	transform: translateX(0);
+}
+
+section#questionScreen div#answers .answerBlock:nth-of-type(3).rightAnswer{
+	transform: translateX(-610px);
+
+}
+
+
+/*----------Right Answer for questions with image----------*/
+
+section#questionScreen div#answers.image .answerBlock.rightAnswer{
+	transform: translateX(0);
+	transition: transform 1s ease;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#14ff35+0,04a10f+100 */
+	background: #14ff35; /* Old browsers */
+    background: -moz-linear-gradient(top, #14ff35 0%, #04a10f 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #14ff35 0%,#04a10f 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #14ff35 0%,#04a10f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14ff35', endColorstr='#04a10f',GradientType=0 ); /* IE6-9 */
+}
+
+
+section#questionScreen div#answers.image .answerBlock.notRightAnswer{
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+
+/*----------Move right answer for questions with image------------*/
+
+
+section#questionScreen div#answers.image .answerBlock:nth-of-type(1).rightAnswer{
+
+	transform: translate(267px,50px);
+}
+
+
+section#questionScreen div#answers.image .answerBlock:nth-of-type(2).rightAnswer{
+	transform: translate(-267px,50px);
+}
+
+section#questionScreen div#answers.image .answerBlock:nth-of-type(3).rightAnswer{
+	transform: translate(267px,-210px);
+
+}
+
+/*-----------------------------------------------------------------------------------------*/
+/*----------Change percantage into points & Move------------*/
+
+/*section#questionScreen div#percentages .rightAnswer .team1 .percentage, section#questionScreen div#percentages .rightAnswer .team2 .percentage{
+	transform: rotate(0deg);
+	transition: transform 1s ease;
+}*/
+
+section#questionScreen div#percentages .rightAnswer div .percentage{
+	/*transform: rotate(0deg);*/
+	transition: transform 0.7s cubic-bezier(.72,-0.76,.45,1.7), color 0.4s ease 0.4s;
+}
+
+section#questionScreen div#percentages .rightAnswer div .percentage.animateChange {
+	transform:rotate(363deg);
+	color: #05EB32;
+}
+
+section#questionScreen div#percentages .rightAnswer .team1 .percentage.animateChange.animateOut {
+	transform:translate(-200px,100px) scale(0.1);
+	opacity: 0;
+	transition: transform 0.7s cubic-bezier(.72,-0.76,.45,1.7), opacity 0.3s ease 0.4s;
+}
+
+section#questionScreen div#percentages .rightAnswer .team2 .percentage.animateChange.animateOut{
+	transform:translate(400px,100px) scale(0.1);
+	opacity: 0;
+	transition: transform 0.7s cubic-bezier(.72,-0.76,.45,1.7), opacity 0.3s ease 0.4s;
+}
+
+
+section#questionScreen div#percentages .rightAnswer  .title.animateOut{
+	transform: scale(0);
+	opacity: 0;
+	transition: transform 0.7s cubic-bezier(.72,-0.76,.45,1.7), opacity 0.3s ease 0.4s;
+}
+
+
+
+section#questionScreen div#percentages.image .rightAnswer .team1 .percentage.animateChange.animateOut{
+	transform:translate(-600px,100px) scale(0.1);
+	opacity: 0;
+	transition: transform 0.7s cubic-bezier(.72,-0.76,.45,1.7), opacity 0.3s ease 0.4s;
+}
+
+section#questionScreen div#percentages.image .rightAnswer .team2 .percentage.animateChange.animateOut{
+	transform:translate(-50px,100px) scale(0.1);
+	opacity: 0;
+	transition: transform 0.7s cubic-bezier(.72,-0.76,.45,1.7), opacity 0.3s ease 0.4s;
+}
+/*-----------------------------------------------------------------------------------------*/
+
+
+
+
+
+/* Transition for clear question screen */
+
+section#questionScreen div#questions .question-NL.animateOut{
+	transform:translateY(-30em);
+	opacity: 0;
+	transition: opacity 1s ease, transform 1s cubic-bezier(.72,-0.76,.45,1.7);
+}
+
+section#questionScreen div#questions .question-EN.animateOut{
+	transform:translateY(-30em);
+	opacity: 0;
+	transition: opacity 1s ease, transform 1s cubic-bezier(.72,-0.76,.45,1.7);
+}
+
+
+section#questionScreen div#answers.animateOut{
+	transform:translateY(-30em);
+	opacity: 0;
+	transition: opacity 1s ease, transform 1s cubic-bezier(.72,-0.76,.45,1.7);
+}
+
+section#questionScreen div#questionImage.animateOut{
+	transform:translateY(-30em);
+	opacity: 0;
+	transition: opacity 1s ease, transform 1s cubic-bezier(.72,-0.76,.45,1.7);
+}
+
+
+.reset{
+	transition:none !important;
+}
+
+section#resultScreen{
+	display:none;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+section#resultScreen.show{
+	display:block;
+}
+
+section#resultScreen.animateIn{
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,176 @@
+<html>
+	<head>
+		<title>AM Quiz</title>
+		<link rel="stylesheet" type="text/css" href="static/css/font.css">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">
+		<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+		<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	</head>
+
+	<body>
+
+		<section id="startScreen" class="animateIn">
+			<h1>Amsterdam Team Quiz !</h1>
+
+			<div class="explanation">
+				<div class="flag">
+					<img src="static/img/flag-NL.jpg">
+				</div>
+				<h2>Welk team weet het meest<BR>over Amsterdam?</h2>
+				<p>Volg de stappen op het andere scherm om deel te nemen en test jouw kennis over Amsterdam, samen met anderen.</p>
+				<div class="notice">
+					<img src="static/img/caution2.png">
+					<p><strong>Minimaal 2 </strong>personen zijn nodig om deze quiz te doen.</p>
+				</div>
+			</div>
+
+			<div class="explanation">
+				<div class="flag">
+					<img src="static/img/flag-EN.jpg">
+				</div>
+				<h2>Which team knows more<BR>about Amsterdam?</h2>
+				<p>Follow the steps on the other screen to participate and test your knowledge of Amsterdam, together with other people.</p>
+				<div class="notice">
+					<img src="static/img/caution2.png">
+					<p><strong>At least 2 </strong>people are recquired to do the quiz.</p>
+				</div>
+			</div>
+
+			<div class="secondScreen">
+				<img src="static/img/second-screen.png">
+			</div>
+		</section>
+
+		<section id="questionScreen">
+			<h1></h1>
+
+			<div id="questions">
+				<div class="question-NL"></div>
+				<div class="question-EN"></div>
+			</div>
+
+
+			<div id="questionImage">
+					<div class="image"></div>
+				</div>
+			</div><!--
+
+			--><div id="answers">
+				<div class="answerBlock">
+					<div class="answerLetter">A</div><!--
+					--><div class="answer">
+						<div class="answer-NL"></div>
+						<div class="line"></div>
+						<div class="answer-EN"></div>
+						<div class="answer-Both"></div>
+					</div>
+				</div><!--
+
+				--><div class="answerBlock">
+					<div class="answerLetter">B</div><!--
+					--><div class="answer">
+						<div class="answer-NL"></div>
+						<div class="line"></div>
+						<div class="answer-EN"></div>
+						<div class="answer-Both"></div>
+					</div>
+				</div><!--
+
+				--><div class="answerBlock">
+					<div class="answerLetter">C</div><!--
+					--><div class="answer">
+						<div class="answer-NL"></div>
+						<div class="line"></div>
+						<div class="answer-EN"></div>
+						<div class="answer-Both"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="percentages">
+				<div class="rightAnswer">
+
+					<div class="team1">
+						<div class="title">Team 1</div>
+						<div class="percentage">40%</div>
+					</div>
+					<div class="team2">
+						<div class="title">Team 2</div>
+						<div class="percentage">60%</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="score">
+				<div class="scoreTeam1">
+					<div class="teamName">Team 1:</div>
+					<div class="bar">
+						<div class="progress"></div>
+					</div>
+				</div><!--
+
+				--><div class="scoreTeam2">
+					<div class="teamName">Team 2:</div>
+					<div class="bar">
+						<div class="progress"></div>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="time">
+				<div class="title">Tijd / Time:</div>
+				<canvas id="my_canvas" width="140" height="140"></canvas>
+				<canvas id="my_other_canvas" width="140" height="140"></canvas>
+				<div class="timeLeft">8</div>
+			</div>
+		</section>
+
+		<section id="resultScreen">
+			<h1>Resultaten / Results</h1>
+			<div class="points">
+				<div class="scoreNumbers">
+					<div class="title">
+						<div class="points">
+							<div>Punten</div>
+							<div class="line"></div>
+							<div>Points</div>
+						</div>
+						<div class="correct">Correct</div>
+						<div class="incorrect">Incorrect</div>
+					</div>
+
+					<div class="teamScore">
+						<div class="teamName">TEAM 1</div>
+						<div class="score">50 / 500</div>
+						<div class="percentageCorrect">85%</div>
+						<div class="percentageIncorrect">15%</div>
+						<div class="winner">
+							<div>Winnaar</div>
+							<div class="line"></div>
+							<div>Winner</div>
+						</div>
+					</div>
+
+					<div class="teamScore">
+						<div class="teamName">TEAM 2</div>
+						<div class="score">433 / 500</div>
+						<div class="percentageCorrect">65%</div>
+						<div class="percentageIncorrect">35%</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="thanks">
+				<div class="NL-text">Dankjewel voor het spelen!</div>
+				<div class="line"></div>
+				<div class="EN-text">Thank you for playing!</div>
+			</div>
+		</section>
+
+
+	</body>
+<script type="text/javascript" src="static/js/javascript.js"></script>
+<script type="text/javascript" src="static/js/jquery.js"></script>
+</html>

@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'Geomanist-Medium';
+  src: url('../fonts/Geomanist-Medium.eot');
+  src: url('../fonts/Geomanist-Medium.woff2') format('woff2'),
+       url('../fonts/Geomanist-Medium.woff') format('woff'),
+       url('../fonts/Geomanist-Medium.ttf') format('truetype'),
+       url('../fonts/Geomanist-Medium.svg#Geomanist-Medium') format('svg'),
+       url('../fonts/Geomanist-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Digitalt';
+  src: url('../fonts/Digitalt.eot');
+  src: url('../fonts/Digitalt.woff2') format('woff2'),
+       url('../fonts/Digitalt.woff') format('woff'),
+       url('../fonts/Digitalt.ttf') format('truetype'),
+       url('../fonts/Digitalt.svg#Digitalt') format('svg'),
+       url('../fonts/Digitalt.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ProximaNova-Black';
+  src: url('../fonts/ProximaNova-Black.eot');
+  src: url('../fonts/ProximaNova-Black.woff2') format('woff2'),
+       url('../fonts/ProximaNova-Black.woff') format('woff'),
+       url('../fonts/ProximaNova-Black.ttf') format('truetype'),
+       url('../fonts/ProximaNova-Black.svg#ProximaNova-Black') format('svg'),
+       url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geomanist-Bold';
+  src: url('../fonts/Geomanist-Bold.eot');
+  src: url('../fonts/Geomanist-Bold.woff2') format('woff2'),
+       url('../fonts/Geomanist-Bold.woff') format('woff'),
+       url('../fonts/Geomanist-Bold.ttf') format('truetype'),
+       url('../fonts/Geomanist-Bold.svg#Geomanist-Bold') format('svg'),
+       url('../fonts/Geomanist-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+

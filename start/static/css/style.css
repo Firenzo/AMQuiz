@@ -1,0 +1,276 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background:#1e91cd;
+	background:url(../img/Achtergrond-rondjes.jpg);
+	font-family: "Geomanist-Medium", sans-serif;
+}
+/*------------------------Animations-----------------------------------------*/
+
+@keyframes movePodcatcher {
+    0% {transform:translate(-7em,3em)}
+    20% {transform:translate(3em,0em)}
+    80%{transform:translate(3em,0em)}
+    90% {transform:translate(-7em,3em)}
+    100% {transform:translate(-7em,3em)}
+}
+
+
+
+section#pointPodcatcher div#image img#podcatcher{
+	-webkit-animation: movePodcatcher 5s infinite ease; /* Safari 4.0 - 8.0 */
+    animation: movePodcatcher 5s infinite ease;
+}
+
+/*-----------------------------------------------------------*/
+
+
+
+
+/*---------------POINT PODCATCHER-----------------*/
+
+
+/*--------Transitions----------*/
+
+section#pointPodcatcher{
+	opacity: 1;
+	transition: opacity 0.4s ease;
+}
+
+section#pointPodcatcher.fadeOut{
+	opacity: 0;
+}
+
+section#pointPodcatcher.hide{
+	display: none;
+}
+
+/*--------------------------------*/
+
+
+#image{
+	width:552px;
+	margin:auto;
+}
+
+img#podcatcher{
+	height:420px;
+	position:relative;
+	top:50px;
+}
+
+img#IDentifier{
+	height:190px;
+	position: relative;
+	top:150px;
+	left:300px;
+}
+
+.NL-text, .EN-text{
+	width:1560px;
+	text-align: left;
+	margin-left: 180px;
+}
+
+.EN-text{
+	margin-top:13px;
+}
+
+.NL-text{
+	margin-top: 150px;
+	margin-bottom:26px;
+}
+
+.NL-text img, .NL-text div, .EN-text img, .EN-text div{
+	display:inline-block;
+}
+
+.NL-text img, .EN-text img{
+	width: 140px;
+	-webkit-transform: translateY(10px);
+          transform: translateY(10px);
+}
+
+.NL-text div, .EN-text div{
+	color: white;
+	font-size:49px;
+	text-shadow: 2px 2px black;
+	text-align: left;
+	margin-left:75px;
+	letter-spacing: 2px;
+}
+
+div.line{
+	display:block;
+	margin:auto;
+	width:1560px;
+	border-bottom: 1px solid rgba(255,255,255,0.8);
+}
+/*-------------------------------------------------------------------------------------*/
+
+
+
+
+/*---------------TEAM NUMBER----------------------*/
+
+section#teamNumber .title .NL-text, section#teamNumber .title .EN-text{
+	font-family: "Digitalt";
+	font-size: 75px;
+	color:white;
+	text-shadow: 2px 2px black;
+	text-align: center;
+}
+
+section#teamNumber .title div.line{
+	width:725px;
+}
+
+section#teamNumber .title .NL-text{
+	margin-top:50px;
+	margin-bottom: 0;
+}
+
+section#teamNumber .title .EN-text{
+	margin-top: 0;
+}
+
+section#teamNumber #team{
+	margin-top:120px;
+	font-size:188px;
+	color:white;
+	text-shadow:5px 5px 13px black;
+	font-family: "ProximaNova-Black";
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+	padding:85px 0;
+}
+
+#text div.NL-text{
+	margin-top:70px;
+}
+
+
+
+/*---------------TRANSITIONS---------------*/
+
+section#teamNumber.hide{
+	display:none;
+}
+
+section#teamNumber .show{
+
+}
+
+section#teamNumber div.title{
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+
+section#teamNumber div.title.fadeIn{
+	opacity: 1;
+}
+
+section#teamNumber div#team{
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+
+section#teamNumber div#team.fadeIn{
+	opacity: 1;
+}
+
+section#teamNumber #text{
+	opacity: 0;
+	transform:translateX(-13em);
+	transition: all 1.5s ease;
+}
+
+section#teamNumber #text.fadeIn{
+	opacity: 1;
+	transform:translateX(0em);
+}
+/*-------------------------------------------------------------------------------------*/
+
+
+
+@media screen and (max-width: 1024px) {
+
+#image{
+	width:552px;
+	margin:auto;
+}
+
+img#podcatcher{
+	height:320px;
+	position:relative;
+	top:100px;
+	left:-110px;
+}
+
+img#IDentifier{
+	height:160px;
+	position: relative;
+	top:-120px;
+	left:280px;
+}
+
+.NL-text{
+	margin-top:170px;
+}
+
+.NL-text, .EN-text{
+	width:850px;
+	text-align: left;
+	margin-left: 50px;
+}
+
+.NL-text div, .EN-text div{
+	color: white;
+	font-size:32px;
+	text-shadow: 2px 2px black;
+	text-align: left;
+	margin-left: 30px;
+	letter-spacing: 2px;
+}
+
+.NL-text img, .EN-text img{
+	width: 100px;
+}
+
+div.line{
+
+	width:900px;
+}
+
+
+
+/*TEAM SCREEN*/
+section#teamNumber .title{
+	margin-top:35px;
+}
+
+section#teamNumber .title .NL-text, section#teamNumber .title .EN-text{
+	font-size:55px;
+	margin:auto;
+	width:900px;
+}
+
+section#teamNumber #team{
+	font-size: 130px;
+	margin-top:30px;
+	padding: 50px 0;
+}
+
+
+
+
+
+}
+
+
+
+
+
